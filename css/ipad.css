@@ -1,0 +1,21 @@
+@media screen and (device-aspect-ratio: 3/4)  {
+#leftpanel {
+  	margin-top: 68px;
+}
+#searchbox{
+	 width: 210px;
+}
+
+[data-role="header"] {
+      padding-bottom:110px;
+     
+}
+ 
+}
+
+
+/* iPads (landscape) ----------- */
+@media screen and (device-aspect-ratio: 3/4)  
+and (orientation : landscape) { 
+ 
+}

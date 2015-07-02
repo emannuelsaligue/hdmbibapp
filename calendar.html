@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+        <meta name="format-detection" content="telephone=no" />
+      <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0"/>
+ 
+        <link href="imageviewer/css/boilerplate.css" rel="stylesheet" type="text/css"/>
+         <link href='imageviewer/css/forimageviewer.css' rel='stylesheet' type='text/css'/>
+        <link href="imageviewer/css/style.css" rel="stylesheet" type="text/css"/> 
+        <link href="imageviewer/css/fluid-grid.css" rel="stylesheet" type="text/css"/>
+        <link href="imageviewer/css/iphone4orless.css" rel="stylesheet" type="text/css"/>
+        <link href="imageviewer/css/iphone5orlater.css" rel="stylesheet" type="text/css"/>
+        <link href="imageviewer/css/ipad.css" rel="stylesheet" type="text/css"/>
+        <link href="imageviewer/css/main.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="imageviewer/css/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <script src="imageviewer/js/jquery.js" type="text/javascript"></script>
+        <script src="imageviewer/js/jquery.mobile-1.4.1.min.js" type="text/javascript"></script>
+        
+        <script src="imageviewer/js/custom.js" type="text/javascript"></script>
+        
+		
+          
+   <link rel="stylesheet" href="css/themes/be1432.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+                
+	
+         
+         
+         <script src="imageviewer/js/search_f_f.js" type="text/javascript"></script>
+         
+         
+        <script src="imageviewer/js/hammer.js"></script>
+        <script src="imageviewer/js/jquery.hammer.js"></script>
+        <script src="imageviewer/js/myLogic.js"></script>
+    
+    
+	
+     			
+	 	
+		<!-- jQueryMobile core CSS -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		
+	 
+				
+		<!-- NIGHTLY style -->
+		<link rel="stylesheet" href="css/nightly.css" />
+				
+   	    
+        
+         <link rel="stylesheet" href="css/new.css" />
+	 	
+		<!-- Load Font Awesome Icons -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		  
+	 
+	 
+		<!-- NIGHTLY JS -->
+		<script src="js/nightly.js"></script>
+      
+   
+        
+        <title>HFU Bib</title>
+        <script>
+    var txt='';
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+// PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+//
+function onDeviceReady() {
+
+
+ 
+   if(checkConnection()){
+   // alert('you are ONline');
+    }
+    else{
+      //    alert('you are Offline');
+    }
+    $(document).addEventListener("touchmove", function (e) {
+        
+    e.preventDefault(); 
+}, false);
+ $(document).addEventListener("touchMove" ,onTouchMoveScrollable);
+
+
+}
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+ 
+        </script>
+     
+<style> 
+.ui-panel-inner{
+padding-top: 0px;}</style>
+    </head>
+    <body onload="">
+ <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+	 
+     $(document).on('blur', 'input, textarea', function() {
+    setTimeout(function() {
+        window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+    }, 0);
+});
+	</script>
+     <link href="imageviewer/css/iphone4orless.css" rel="stylesheet" type="text/css"/>
+        <link href="imageviewer/css/iphone5orlater.css" rel="stylesheet" type="text/css"/>
+        <link href="imageviewer/css/ipad.css" rel="stylesheet" type="text/css"/>
+    <!-- ########################################################  Tour  -->
+<div data-role="page" id="imageviewer_f"  style="direction:rtl;background-color: #fff; ">
+       
+         
+ 
+   
+
+     <div data-role="header"  data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:30px;z-index: 100;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style=" margin-top:10px;" alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"  style=" margin-top:10px;"   />
+                 </div>
+                 <h1 class="header-title" >  Unsere &#214;ffnungszeiten</h1>
+                 
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+              
+  
+
+ 
+  
+     
+    <iframe style="width: 100%;height: 800px;" src="https://www.google.com/calendar/embed?title=%C3%96ffnungszeiten%20Bibliothek&amp;showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=4c4ujfatetqfq2gb7u0do854k0%40group.calendar.google.com&amp;color=%23711616&amp;src=k9j5304ic1eqni8nbjv3u69lqo%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FBerlin"
+    frameborder="0" scrolling="no"
+    ></iframe>
+    
+    </div>
+<!----> 
+ 
+
+</div><!-- endof page imageviewer-->
+ 
+ 
+ 
+   
+ 
+  
+ 
+<img src="css/img/menu_bg.png" style="display:none;" /> 
+  
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="imageviewer/js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            $("body").css("display", "none");
+            $("body").fadeIn(500);
+                 
+                 
+      var discription;
+     var forr= getParameterByName('for');
+     var filename=    getParameterByName('filename');
+      var file=    getParameterByName('file');
+      /*
+       alert(forr+" =for");
+              alert(filename+" =filename");
+               alert(file+" =file");
+       */
+     
+      
+          discription= search_f_f(file,'discription');      
+      
+ /* document.getElementById("img_f").innerHTML='<img  src="imageviewer/'+ filename+'" alt="" id="floorp" /> '     */   
+
+  document.getElementById("img_f").innerHTML='<img  src="imageviewer/hdm_bib_EG_bereinigt_end.png" alt="" id="floorp" /> '     
+        </script>
+        
+        
+        <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="leftpanel" 
+ style="margin-top: 68px;border: solid #ececec 1px;margin-left: -3px;direction:ltr  ">
+    <ul data-role="listview" id="panelul"  >
+        
+        <li data-filtertext="Home" data-icon="false" >
+            <a href="index.html#index" data-ajax="false" data-role="button" data-corners="false"    >  <i class='fa icon-Home fa-normal fa-fw'></i> Home</a>
+        </li>
+        <li data-filtertext=" Zugang zum Katalog" data-icon="false" >
+            <a href="#" onclick="external('https://bsz.ibs-bw.de/aDISWeb/app?service=direct/0/Home/$DirectLink&sp=S127.0.0.1:23212');" data-ajax="false" data-role="button" data-corners="false">  <i class='fa icon-Open-Book fa-normal fa-fw'></i> Zugang zum Katalog </a>
+        </li>
+        <li data-filtertext="Zugang zum Benutzerkonto" data-icon="false">
+            <a  href="#" onclick="external('https://bsz.ibs-bw.de/aDISWeb/app?service=direct/0/Home/$DirectLink&sp=S127.0.0.1:23212&sp=SBK00000000');" data-ajax="false" data-role="button" data-corners="false"> <i class='fa icon-User fa-normal fa-fw'></i>  Zugang zum Benutzerkonto </a>
+        </li>
+        <li data-filtertext="Medien" data-icon="false">
+            <a href="index.html#Medien" data-ajax="false" data-role="button" data-corners="false">
+             <i class='fa  icon-Books-2 fa-normal fa-fw '></i>  Medien</a>
+        </li>
+        
+          
+        <li data-filtertext="Lern- und Arbeitszonen" data-icon="false">
+         <a href="index.html#Arbeitszonen" data-ajax="false" data-role="button" data-corners="false">
+          <i class='fa icon-Pen-2 fa-normal fa-fw'></i>  Lern- und Arbeitszonen</a>
+           </li>
+           
+        <li data-filtertext="Services" data-icon="false">
+            <a href="index.html#Services" data-ajax="false" data-role="button" data-corners="false">  <i class='fa icon-Speach-Bubbles fa-normal fa-fw'></i>  Services</a>
+        </li>
+        <li data-filtertext="Unsere Öffnungszeiten" data-icon="false">
+            <a href="calendar.html" data-ajax="false" data-role="button" data-corners="false"> <i class='fa icon-Watch fa-normal fa-fw'></i>  Unsere &#214;ffnungszeiten</a>
+        </li>
+        <li data-filtertext="Standort Deiner Bibliothek" data-icon="false">
+            <a href="index.html#Standort" data-ajax="false" data-role="button" data-corners="false">  <i class='fa  icon-Standort_der_bibliothek  fa-normal fa-fw'></i>  Standort Deiner Bibliothek</a>
+        </li>
+        <li data-filtertext="News Deiner Bibliothek" data-icon="false">
+            <a  href="#" onclick="external('https://www.hdm-stuttgart.de/bibliothek/startseite');" data-ajax="false" data-role="button">  <i class='fa icon-Newspaper-2 fa-normal fa-fw'></i> News Deiner Bibliothek</a>
+        </li>
+        <li data-filtertext="Impressum" data-icon="false">
+            <a href="index.html#Impressum" data-ajax="false" data-role="button" data-corners="false">  <i class='fa icon-Information fa-normal fa-fw'></i>Impressum</a>
+        </li>
+    </ul>
+</div>
+    </body>
+</html>

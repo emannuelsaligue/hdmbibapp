@@ -1,0 +1,43 @@
+	
+	@media screen and (device-aspect-ratio: 2/3) { 
+
+    [data-role="header"] {
+      padding-bottom: 105px;
+}
+
+      [data-role=header] .header-title {
+        font-size: 14px;
+            text-overflow: ellipsis;
+
+  width: 60%;
+  margin-left: 80px;
+       } 
+
+       [data-role=header] #header-menu-icon {
+		  display: inline-block;
+		  position: absolute;
+		  width: 50px;
+		  left: 4px;
+		  top: 23px;
+		}
+       .backButton{
+       	width: 20px;
+  		padding: 5px;
+  		position: fixed;
+  		top: 25px;
+  		left: 50px;
+       }
+#leftpanel {
+    margin-top: 68px;
+}
+       #searchbox{
+   width: 110px;
+}
+} 
+@media screen and (device-aspect-ratio: 2/3) 
+and (orientation : landscape)  {
+	[data-role=header] .header-title {{
+        
+
+       }         
+}

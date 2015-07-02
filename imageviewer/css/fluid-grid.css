@@ -1,0 +1,344 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+a{
+    text-decoration: none;
+    text-decoration-color: black;
+}
+#menu {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #be1432;
+	position: fixed;
+	top: 0;
+	height:46px;
+ color: #fff;
+	background-repeat:repeat-x;
+    z-index: 100;    
+      
+ } 
+ .iscrollgreen{
+    clear: both;
+	float: left;
+	margin-left: 0;
+    margin-top:46px ;
+	width: 100%;
+	display: block;
+	background-color: #008d58;
+	position: fixed;
+ 	height:46px;
+    color: #fff;
+    z-index: 6;   
+    text-align: center;
+    font-size: 15px; 
+  z-index: 100;    
+ }
+ 
+ 
+ #buttonContainer{
+       margin: 0;
+      height: 40px;
+      
+ }
+ #homeb{
+    text-align: center;
+    float: left;
+    display: inline-block;
+     font-family: navigatorIcon;
+     color: #be1633;
+     text-decoration: none;
+     text-decoration-color: #fff;
+      
+      margin: 0 0 0 05px;
+      font-size: 22px;
+      width: 50px;
+      height: 35px;
+      padding-top: 7px;
+ }
+ #backb{
+     text-align: center;
+     float: left;
+    display: inline-block;
+     font-family: navigatorIcon;
+      color: #be1633;
+       text-decoration: none;
+     text-decoration-color: #fff;
+     
+     margin: 0px 0 0 05px;
+        font-size: 26px;
+         width: 50px;
+      height: 35px;
+       padding-top: 7px;
+ }
+  .infob{
+      text-align: center;
+     float: right;
+    right: 0;
+    display: inline-block;
+     font-family: navigatorIcon;
+      color: #fff;
+       text-decoration: none;
+     text-decoration-color: #fff;
+      margin: 0 05px 0 0;
+       
+         font-size: 25px;
+         width: 50px;
+      height: 35px;
+         padding-top: 7px;
+ }
+     
+ 
+ #nextb{
+     text-align: center;
+   float: right;
+    display: inline-block;
+     font-family: navigatorIcon;
+      color: #828282;
+       text-decoration: none;
+     text-decoration-color: #fff;
+     
+        margin: 0 25px 0 0;
+        font-size: 20px;
+         width: 40px;
+      height: 40px;
+      padding-top: 2px;
+      display: none;
+         padding-top: 7px;
+ }
+ 
+
+ 
+
+     
+        
+    #searchtext{
+         float: left;
+        background-color: white;
+        color: #6d6e76;
+        width: 300px;
+        height: 52px;
+       border-style: none;
+      border-radius: 0px;
+      font-size: 18px;
+      margin-left: -3px;
+      text-transform: uppercase
+    }
+    
+      #searchtext2{
+         float: left;
+        background-color: white;
+        color: #6d6e76;
+        width: 300px;
+        height: 52px;
+       border-style: none;
+      border-radius: 0px;
+      font-size: 18px;
+      margin-left: -3px;
+        text-transform: uppercase
+    }
+     #searchtext3{
+         float: left;
+        background-color: white;
+        color: #6d6e76;
+        width: 300px;
+        height: 52px;
+       border-style: none;
+      border-radius: 0px;
+      font-size: 18px;
+      margin-left: -3px;
+        text-transform: uppercase
+    }
+     
+     #searchIconContainer{
+         float: left;
+        width: 60px;
+         height:60px;
+         background:#80ba27 ;
+         margin-left: 5px;
+     
+     }
+      #searchIcon{
+     
+     font-family: navigatorIcon;
+     font-size: 30px;
+      color: #FFF;
+       text-decoration: none;
+     text-decoration-color: #fff;
+        margin: 13px auto;
+       
+         width: 30px;
+      height: 30px;
+          
+ }
+.gridContainer {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+    background-color: #80ba27;
+     
+    overflow: hidden;
+}
+ 
+ 
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	color: #fff;
+	background-color: #80bb27;
+		 
+}
+#mainContent {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	color: #000;
+	margin-top: 20px;
+	 
+}
+#headerTitle {
+	clear: none;
+	float: left;
+	margin-left: 8.4249%;
+	width: 83.1501%;
+	display: block;
+}
+ 
+ 
+#headerSpace {
+	clear: both;
+	float: left;
+	margin-left: 0;
+    margin-top: 45px;
+	width: 100%;
+	display: block;
+	height: 24px;
+	  
+}
+ 
+#homeheaderSpace {
+	clear: both;
+	float: left;
+	margin-left: 0;
+    margin-top: 0px;
+	width: 100%;
+	display: block;
+	height: 24px;
+	/*background-color: red;
+	 [disabled]display:none; */
+}
+#divNote {
+	
+	margin-top:5px;
+	margin-left: 8.4249%;
+	width: 89.1501%;
+	display: block;
+	 font-size: 17px;
+	  font-family: UniversLTW02-57Condensed;
+	  
+	clear: both;
+}
+ 
+
+.circle {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	-moz-border-radius: 100%;
+	padding-bottom: 100%;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	background: #80bb27;
+	color: white;
+	font-family: Helvetica, Arial Black, sans;
+	text-align: center;
+	border: 3px solid #80bb27;
+ }
+ 
+ #c_con1{
+	float: left;
+	width: 37.0%;
+	height: 37.0%;
+ 	margin: 20px 0px  0px 5.5%;
+   /*border: solid red 1px;/**/
+	
+ }
+ #c_con2{
+	   float:right;
+	width: 37.0%;
+	height: 37.0%;
+ 	/*border:solid red 1px;/**/
+	 margin:20px 7% 0px 0px;
+ }
+ #c_con3{
+	width: 37.0%;
+	height: 37.0%;
+ 	/*border:solid red 1px; /**/
+	 margin:0 auto;
+	  clear:both;
+ }
+     .circle span {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 43%;
+	line-height: 1em;
+	height: 2.5em;
+	overflow: hidden;
+	font-size: 16px;
+	color: #fff;
+	font-family: arial;
+    } 
+#headerTitle  div:first-child{
+    font-size: 27px;
+	margin-top:11px;
+	 
+	height:28px;
+	
+	}
+	#headerTitle div:nth-child(2){
+		 font-size: 14px;
+		 margin-bottom:7px;
+		 
+	}
+	
+	#menu{
+	  clear: both;
+	  float: left;
+	  margin-left: 0;
+	  width: 100%;
+	  display: block;
+	}
+	#footer{
+	 clear: both;
+	  
+	  margin-left: 0;
+	  width: 100%;
+	  display: block;
+	   
+	}
+	#circlesDivs{
+		margin-top:13px;
+		padding-bottom:35px; 
+		 clear: both;
+	 
+	}

@@ -1,0 +1,47 @@
+ @media screen and (device-aspect-ratio: 40/71)
+ {
+
+
+   [data-role="header"] {
+      padding-bottom: 105px;
+}
+    [data-role=header] .header-title {
+        font-size: 14px;
+           text-overflow: ellipsis;
+  
+  width: 60%;
+  margin-left: 80px;
+       } 
+
+       [data-role=header] #header-menu-icon {
+		  display: inline-block;
+		  position: absolute;
+		  width: 50px;
+		  left: 4px;
+		  top: 23px;
+		}
+       .backButton{
+       	width: 20px;
+  		padding: 5px;
+  		position: fixed;
+  		top: 25px;
+  		left: 50px;
+       }
+
+       #leftpanel {
+    margin-top: 68px;
+}
+#searchbox{
+   width: 110px;
+}
+}
+	/* iphone 4-inc
+	iPhone 5  (landscape)*/
+ @media screen and (device-aspect-ratio: 40/71)
+ and (orientation : landscape) {
+     .header-title{
+        font-size: 10px;
+       } 
+}
+ 
+ 

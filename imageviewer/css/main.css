@@ -1,0 +1,98 @@
+div{
+  /*border: solid black 1px;*/
+} 
+	
+#headerTitle{
+	font-family: 'UniversCom-67BoldCond',san-serif;
+	
+	 
+}
+
+/*
+ footer{
+	 clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #000;
+	position: fixed;
+	bottom: 0;
+	height:45px;
+	background-image:url(img/menu_bg.png);
+	background-repeat:repeat-x;
+ }*/
+
+
+.circleContainer{
+    z-index: 0;
+}
+.bgCircle {
+     z-index: 0;
+}
+.iconList{
+      z-index: 0;
+}
+.iconSize {
+      z-index: 0;
+}
+
+ #virtualtourContainer{
+  
+ }
+#headerImg{
+    z-index: 5;
+}
+/* @font-face */
+@font-face
+{
+    font-family: UniversCom-67BoldCond;
+    src: url('font/UniversCom-67BoldCond.ttf')
+}
+@font-face
+{
+    font-family: UniversLTW02-57Condensed;
+    src: url('font/UniversLTW02-57Condensed.ttf')
+}
+
+/* @font-face */
+@font-face
+{
+    font-family: circle;
+    src: url('font/circle.ttf')
+}
+@font-face
+{
+    font-family: icons;
+    src: url('font/icons.ttf')
+}
+@font-face
+{
+    font-family: icons2;
+    src: url('font/icons2.ttf')
+}
+@font-face
+{
+    font-family: icons4;
+    src: url('font/icons4.ttf')
+}
+@font-face
+{
+    font-family: icons5;
+    src: url('font/icons5.ttf')
+}
+ @font-face
+{
+    font-family: navigatorIcon;
+    src: url('font/navigator.ttf')
+}
+ @font-face
+{
+    font-family: medien;
+    src: url('font/medien.ttf')
+}
+@font-face
+{
+    font-family: icons6;
+    src: url('font/icons6.ttf')
+}

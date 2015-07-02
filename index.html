@@ -1,0 +1,1311 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <title>HdM Bibliotheks-App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta charset="ISO-8859-1">
+		<!-- jQueryMobileCSS - styling-->
+		<link rel="stylesheet" href="css/jqeury.mobile.theme.min.css" />
+				
+		<!-- jQueryMobile icons -->
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+		
+		<!-- jQueryMobile core CSS -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		
+		<!-- Owl stylesheet -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		
+		<!-- Owl Theme -->
+		<link rel="stylesheet" href="css/owl.theme.css">
+				
+		<!-- NIGHTLY style -->
+		<link rel="stylesheet" href="css/nightly.css" />
+				
+   	   
+        <link rel="stylesheet" href="css/HDMIcons.css" type="text/css"/>
+        
+         <link rel="stylesheet" href="css/new.css" />
+
+
+        
+		<!-- Load Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic|Oswald:400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Load Font Awesome Icons -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+          
+   <link rel="stylesheet" href="css/themes/be1432.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+                
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- jQueryMobile -->
+		<script src="js/jquery.mobile.min.js"></script>
+		
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		
+		<!-- NIGHTLY JS -->
+		<script src="js/nightly.js"></script>
+        
+          
+          <script src="js/function.js"></script>
+ 	  
+        <script src="js/panel.js"></script>
+         <script src="imageviewer/js/custom.js" type="text/javascript"></script>
+ <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+	 
+     $(document).on('blur', 'input, textarea', function() {
+    setTimeout(function() {
+        window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+    }, 0);
+});
+	</script>
+    <style>.box-holder .ui-input-text {
+    width: 100px;
+}
+.ui-panel-inner{
+padding-top: 0px;}</style>
+ <link rel="stylesheet" href="css/new2.css" />
+    <link rel="stylesheet" href="css/iphone4orless.css" />
+
+          <link rel="stylesheet" href="css/iphone5orlater.css" />
+
+          <link rel="stylesheet" href="css/iphone6orlater.css" />
+          <link rel="stylesheet" href="css/ipad.css" />
+    </head>
+
+<body>
+
+<div data-role="page" id="index"   style="padding-top:15px;background-color: #f9f9f9;margin-bottom: 0;padding-bottom: 0;  " data-theme='a'  >
+        
+  
+           
+    
+                           
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff ;border:solid #fff 1px;padding-top:19px;padding-bottom:0px;" >
+                <a href='#leftpanel' data-role="none" style=""><img src="images/menu-icon.png"  style="position: static;  margin-top: 19px;" alt="leftpanel" id="header-menu-icon"  /></a>
+                 <h1 class="header-title" style="" >HdM Bibliotheks-App</h1>
+                
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+            
+            <div data-role="content" >
+             <div data-role="none" id="main-slider" class="owl-carousel"
+              style="border:solid black 1px;margin-bottom: -32px;margin-top: 1px;">
+
+                    
+                    <div class="item">
+                      <img src="assets/Stuttgart_HdM_3083.jpg" alt="Responsive">
+                       
+                    </div>
+    
+                    <div class="item">
+                      <img src="assets/Stuttgart_HdM_3314_mit_Personen.jpg" alt="CSS3">
+                       
+                    </div>
+
+                    <div class="item">
+                      <img src="assets/FT8A0124_Kapitel_9_Kreiser_xx.jpg" alt="Grab">
+                      
+                    </div>
+    
+                    
+
+                </div>    
+                 
+                
+    <ul  data-role="listview" data-enhance="false"  >
+    
+     
+  <li ><a class="mainlink"   style="background: #be1432;color: #fff;padding: .7em 1em;"
+        href="#" onclick="external('https://bsz.ibs-bw.de/aDISWeb/app?service=direct/0/Home/$DirectLink&sp=S127.0.0.1:23212');" 
+                data-ajax="false"  data-role="button" data-corners="false" >
+              <i class='fa icon-Open-Book fa-normal fa-fw'  style="color: #fff;"></i>  Zugang zum Katalog</a>
+              </li>
+  
+  <li><a class="mainlink"    style="background: #be1432;color: #fff;  padding: .7em 1em;"
+        href="#" onclick="external('https://bsz.ibs-bw.de/aDISWeb/app?service=direct/0/Home/$DirectLink&sp=S127.0.0.1:23212&sp=SBK00000000');"
+                 data-ajax="false"  data-role="button" data-corners="false"  >
+               <i class='fa icon-User fa-normal fa-fw'  style="color: #fff;" ></i>  Zugang zum Benutzerkonto</a></li>
+ 
+       
+ 
+  <li><a class="mainlink"    style="background: #be1432;color: #fff;padding: .7em 1em;"
+        href="#Medien" data-ajax="false"  data-role="button" data-corners="false">
+              <i class='fa  icon-Books-2 fa-normal fa-fw ' style="color: #fff;" ></i>   Medien</a></li>
+  
+           <li><a style="padding-left: 2.143em;  "  
+           href="#M_Gruppen" data-ajax="false" 
+            data-role="button" data-corners="false" >
+             <i class='fa icon-Transform fa-normal fa-fw' >
+             </i>Suche nach Fachgruppen</a>
+  </li>
+          <li><a  style="padding-left: 2.143em;"   href="#M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Suche_nach_fachgebiete fa-normal fa-fw' ></i>Suche nach Fachgebieten</a></li>
+          <li><a  style="padding-left: 2.143em;  " href="#M_Signaturen" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Spell-CheckABC fa-normal fa-fw'  ></i>Suche nach Signaturen</a></li>
+          <li><a  style="padding-left: 2.143em;   " href="#M_Bibliothek" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Font-Window fa-normal fa-fw' ></i>die digitale Bibliothek</a></li>
+         
+  
+  <li><a class="mainlink"     style="background: #be1432;color: #fff;padding: .7em 1em;"
+        href="#Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+              <i class='fa icon-Pen-2 fa-normal fa-fw' style="color: #fff;" ></i>  Lern- und Arbeitszonen</a>
+              </li>
+  
+           <li><a style="padding-left: 2.143em;  ; "    href="imageviewer.html?for=einzelar&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false" >
+           <i class='fa  icon-Business-Man fa-normal fa-fw' ></i>Einzelarbeitspl&#228;tze</a>
+           </li>
+          <li><a style="padding-left: 2.143em;   "    href="imageviewer.html?for=gruppenar&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+          <i class='fa  icon-Mens fa-normal fa-fw' >
+          </i>LernZentrum f&#252;r Gruppen</a>
+          </li>
+          <li><a style="padding-left: 2.143em;  "    href="imageviewer.html?for=lernat&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+          <i class='fa  icon-Board fa-normal fa-fw' ></i>LernAtelier</a>
+          </li>
+          
+  <li><a  style="padding-left: 2.143em;  "  href="imageviewer.html?for=pc-arbeit&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-Monitor fa-normal fa-fw'></i>PC-Arbeitspl&#228;tze EG</a>
+  </li>
+  
+   <li><a  style="padding-left: 2.143em;  "  href="imageviewer.html?for=pc-arbeitog&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-Monitor fa-normal fa-fw'></i>PC-Arbeitspl&#228;tze OG</a>
+  </li>
+           
+            <li><a style="padding-left: 2.143em;  "  
+              href="imageviewer.html?for=lesegeraetseh&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+           <i class='fa icon-Lesegeraet_fuer_seebehinderte fa-normal fa-fw'  ></i>Leseger&#228;t f&#252;r Sehbehinderte</a>
+           </li>
+
+           <li><a style="padding-left: 2.143em;   "  
+             href="imageviewer.html?for=kopie&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+           <i class='fa  icon-Duplicate-Layer fa-normal fa-fw' ></i>Kopierer</a>
+           </li>
+
+           <li><a style="padding-left: 2.143em;   "   
+            href="imageviewer.html?for=buchsca&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+           <i class='fa   icon-Scanner fa-normal fa-fw'  ></i>Scanner</a>
+           </li>
+  
+  
+  
+  <li><a class="mainlink"    style="background: #be1432;color: #fff;padding: .7em 1em;"
+         href="#Services" data-ajax="false"  data-role="button" data-corners="false">
+              <i class='fa icon-Speach-Bubbles fa-normal fa-fw' style="color: #fff;" ></i>  Services</a></li>
+  
+            <li><a  style="padding-left: 2.143em; "   href="imageviewer.html?for=servpoint&title=Services" data-ajax="false"  data-role="button" data-corners="false" >
+            <i class='fa  icon-ServicePoint  fa-normal fa-fw' ></i>ServicePoint (Ausleihe und Information)</a>
+            </li>
+          <li><a   style="padding-left: 2.143em;  "  href="imageviewer.html?for=selfcheck&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+          <i class='fa  icon-Download-2 fa-normal fa-fw' ></i>Selfcheck und Abholregal</a>
+          </li>
+          
+           <li><a   style="padding-left: 2.143em;  "
+             href="imageviewer.html?for=infop&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+            <i class='fa   icon-Info_point  fa-normal fa-fw'  ></i>InfoPoint (Auskunft und Beratung)</a></li>
+ 
+          
+         
+   <li><a style="padding-left: 2.143em;  "   href="imageviewer.html?for=katalogreog&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-VPN fa-normal fa-fw'></i>WebPac-Katalog Recherche OG</a></li>
+  
+  
+  <li><a  style="padding-left: 2.143em;  "  href="imageviewer.html?for=katalogre&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-VPN fa-normal fa-fw'></i>WebPac-Katalog Recherche EG</a></li>
+          
+           <li><a  style="padding-left: 2.143em;   "  
+            href="imageviewer.html?for=schliessfae&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+           <i class='fa  icon-Lock fa-normal fa-fw' ></i>Schlie&#223;f&#228;cher</a>
+           </li>
+        
+            <li><a  style="padding-left: 2.143em;   " 
+              href="imageviewer.html?for=rueck-box&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+                <i class='fa  icon-Rueckgabebox  fa-normal fa-fw' ></i>Medienr&#252;ckgabe</a></li>
+  
+           
+           <li><a  style="padding-left: 2.143em;  " 
+             href="#Bibliotheksteam" data-ajax="false"  data-role="button" data-corners="false">
+           <i class='fa  icon-Address-Book fa-normal fa-fw'  ></i>Dein Bibliotheksteam</a>
+           </li>
+           
+           <li><a  style="padding-left: 2.143em;   " 
+             href="#Fernleihe" data-ajax="false"  data-role="button" data-corners="false">
+           <i class='fa   icon-Fernleihe  fa-normal fa-fw'  >
+           </i>Fernleihe</a>
+           </li>
+         
+  
+  <li><a   class="mainlink"   style="background: #be1432;color: #fff;padding: .7em 1em;"
+          href="#" onclick="internal('calendar.html');" data-ajax="false"  data-role="button" data-corners="false">
+              <i class='fa icon-Watch fa-normal fa-fw'  style="color: #fff;" ></i>  Unsere &#214;ffnungszeiten</a></li>
+  
+  <li><a class="mainlink"  style="background: #be1432;color: #fff;padding: .7em 1em;"
+           href="#Standort" data-ajax="false"  data-role="button" data-corners="false">
+              <i class='fa icon-Standort_der_bibliothek  fa-normal fa-fw'   style="color: #fff;"></i>  Standort Deiner Bibliothek</a></li>
+  
+  <li><a class="mainlink"     style="background: #be1432;color: #fff;padding: .7em 1em;"
+           href="#"  onclick="external('https://www.hdm-stuttgart.de/bibliothek/startseite');" data-ajax="false"  data-role="button"  data-corners="false">
+            <i class='fa icon-Newspaper-2 fa-normal fa-fw'  style="color: #fff;"></i> News Deiner Bibliothek</a></li>
+ 
+  <li style=" border-bottom: #be1432 solid 2px;"><a  class="mainlink" style="background: #be1432;color: #fff;padding: .7em 1em  1em 1em; "
+           href="#Impressum"   data-ajax="false"  data-role="button"  data-corners="false">
+           <i class='fa icon-Information fa-normal fa-fw'  style="color: #fff;"></i> Impressum</a></li>
+  
+ 
+  
+</ul>  </div> 
+        </div>
+        <!--################# -->
+
+
+<!-- ####################### Medien  #######################  -->
+<div data-role="page" style="padding-top:25x;background-color: #f9f9f9;"  id="Medien" data-title="HdM App">
+
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px; " id='headerid'>
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Medien</h1>
+             <div   id="headerImage"><img src="images/Medien.jpg"/></div>
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+    
+    
+   
+
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+ 
+    <ul  data-role="listview"  >
+  <li><a   href="#M_Gruppen" data-ajax="false"  data-role="button" data-corners="false" > <i class='fa icon-Transform fa-normal fa-fw'></i>Suche nach Fachgruppen</a></li>
+  <li><a   href="#M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Suche_nach_fachgebiete fa-normal fa-fw'></i>Suche nach Fachgebieten</a></li>
+  <li><a   href="#M_Signaturen" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Spell-CheckABC fa-normal fa-fw'></i>Suche nach Signaturen</a></li>
+  <li><a   href="#M_Bibliothek" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Font-Window fa-normal fa-fw'></i>die digitale Bibliothek</a></li>
+    <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+ 
+  
+</ul> 
+	</div><!-- /content -->
+
+    
+
+<script type="text/javascript">
+//leftpanel();
+</script>
+
+</div><!-- /page -->
+<!-- ####################### Medien  #######################  -->
+
+        <!-- ####################### M_Gruppen  #######################  -->
+        <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Gruppen" data-title="HdM App">
+              <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Suche nach Fachgruppen</h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Fachgruppen_Allgemein_and_so_on.jpg"/></div>
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+        
+            <div role="main" class="ui-content jqm-content jqm-fullwidth">
+         
+            <ul  data-role="listview"  >
+         <li><a   href="#M_Allgemein" data-ajax="false"  data-role="button" data-corners="false" ><i class='fa icon-Circle fa-normal fa-fw' style="color: #39b54a;"></i>Allgemein</a></li>
+                      <li><a   href="#M_Druck" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Circle fa-normal fa-fw' style="color: #93278f;"></i>Druck / Verpackung</a></li>
+                      <li><a   href="#M_Informatik" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Circle fa-normal fa-fw' style="color: #f9b233;"></i>Naturwissenschaft / Informatik</a></li>
+                      <li><a   href="#M_Mediengestaltung" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Circle fa-normal fa-fw' style="color: #0071bc;"></i>Medienproduktion / Mediengestaltung</a></li>
+                      <li><a   href="#M_Recht" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Circle fa-normal fa-fw' style="color: #c1272d;"></i>Recht / Wirtschaft</a></li>
+                      <li><a   href="#M_Sonderbereiche" data-ajax="false"  data-role="button" data-corners="false"><i class='fa icon-Circle fa-normal fa-fw' style="color: #29abe2;"></i>Sonderbereiche</a></li>
+            <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+          
+         
+         
+          
+        </ul> 
+        	</div><!-- /content -->
+        
+             
+        
+        <script type="text/javascript">
+        //leftpanel();
+        </script>
+        
+        </div><!-- /page -->
+        <!-- ####################### Medien  #######################  -->
+
+    <!-- ####################### M_Allgemein  #######################  -->
+    <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Allgemein" data-title="HdM App">
+            
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Allgemein</h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Fachgruppen_Allgemein_and_so_on.jpg"/></div>
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+    
+        <div role="main" class="ui-content jqm-content jqm-fullwidth">
+     
+        <ul  data-role="listview"  >
+       <li><a   href="imageviewer.html?for=a&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false" >
+       <span class='fa-arial fa-fw'>A</span>Buch- und Bibliothekswesen</a>
+       </li>
+       
+       <li><a   href="imageviewer.html?for=e&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false">
+       <span class='fa-arial fa-fw'>E</span>Geschichte</a>
+       </li>
+       
+       <li><a   href="imageviewer.html?for=g2&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false">
+       <span class='fa-arial fa-fw'>G</span>Soziologie</a>
+       </li>
+       
+       <li><a   href="imageviewer.html?for=l&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false">
+       <span class='fa-arial fa-fw'>L</span>Philosophie</a>
+       </li>
+       
+        <li><a   href="imageviewer.html?for=m&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false">
+        <span class='fa-arial fa-fw'>M</span>Psychologie</a>
+        </li>
+        
+         <li><a   href="imageviewer.html?for=n&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false">
+         <span class='fa-arial fa-fw'>N</span>P&#228;dagogik</a>
+         </li>
+         
+          <li><a   href="imageviewer.html?for=o&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false">
+          <span class='fa-arial fa-fw'>O</span>Sprache / wissenschaftliches Arbeiten</a>
+          </li>
+          
+           <li><a   href="imageviewer.html?for=p&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false">
+           <span class='fa-arial fa-fw'>P</span>Literatur</a>
+           </li>
+           
+            <li><a   href="imageviewer.html?for=r&title=M_Allgemein" data-ajax="false"  data-role="button" data-corners="false">
+            <span class='fa-arial fa-fw'>R</span>Kunst</a>
+            </li>
+        <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+     
+      
+    </ul> 
+    	</div><!-- /content -->
+    
+         
+    
+    <script type="text/javascript">
+    //leftpanel();
+    </script>
+    
+    </div><!-- /page -->
+    <!-- ####################### Medien  #######################  -->
+    
+    
+        <!-- ####################### M_Druck #######################  -->
+    <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Druck" data-title="HdM App">
+    
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Druck / Verpackung</h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Fachgruppen_Allgemein_and_so_on.jpg"/></div>
+             <div style="clear: both;"></div>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content jqm-content jqm-fullwidth">
+     
+        <ul  data-role="listview"  >
+       <li><a   href="imageviewer.html?for=d&title=M_Druck" data-ajax="false"  data-role="button" data-corners="false" >
+       <span class='fa-arial fa-fw'>D</span>Druck</a></li>
+       <li><a   href="imageviewer.html?for=v&title=M_Druck" data-ajax="false"  data-role="button" data-corners="false">
+       <span class='fa-arial fa-fw'>V</span>Verpackungstechnik</a></li> 
+      
+       <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+      
+    </ul> 
+    	</div><!-- /content -->
+    
+         
+    
+    <script type="text/javascript">
+    //leftpanel();
+    </script>
+    
+    </div><!-- /page -->
+    <!-- ####################### Medien  #######################  -->
+    
+            <!-- ####################### M_Naturwissenschaft  #######################  -->
+    <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Informatik" data-title="HdM App">
+    
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' 
+         style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Naturwissenschaft / Informatik</h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Fachgruppen_Allgemein_and_so_on.jpg"/></div>
+             <div style="clear: both;"></div>
+        </div><!-- /header -->
+        
+    
+        <div role="main" class="ui-content jqm-content jqm-fullwidth">
+     
+        <ul  data-role="listview"  >
+       <li><a   href="imageviewer.html?for=t&title=M_Informatik" data-ajax="false"  data-role="button" data-corners="false" ><span class='fa-arial fa-fw'>T</span>Mathematik</a></li>
+       <li><a   href="imageviewer.html?for=u&title=M_Informatik" data-ajax="false"  data-role="button" data-corners="false"><span class='fa-arial fa-fw'>U</span>Naturwissenschaften</a></li> 
+       <li><a   href="imageviewer.html?for=w&title=M_Informatik" data-ajax="false"  data-role="button" data-corners="false" ><span class='fa-arial fa-fw'>W</span>Technik / Informatik</a></li> 
+      
+       <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+      
+    </ul> 
+    	</div><!-- /content -->
+    
+         
+    
+    <script type="text/javascript">
+    //leftpanel();
+    </script>
+    
+    </div><!-- /page -->
+  
+     <!-- ####################### Medien  #######################  -->
+    
+            <!-- ####################### M_Mediengestaltung  #######################  -->
+    <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Mediengestaltung" data-title="HdM App">
+    
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Medienproduktion / Mediengestaltung</h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Fachgruppen_Allgemein_and_so_on.jpg"/></div>
+             <div style="clear: both;"></div>
+        </div><!-- /header -->
+        
+          
+        <div role="main" class="ui-content jqm-content jqm-fullwidth">
+     
+        <ul  data-role="listview"  >
+       <li><a   href="imageviewer.html?for=k&title=M_Mediengestaltung" data-ajax="false"  data-role="button" data-corners="false" ><span class='fa-arial fa-fw'>K</span>Kommunikations- und Medienforschung</a></li>
+       <li><a   href="imageviewer.html?for=s&title=M_Mediengestaltung" data-ajax="false"  data-role="button" data-corners="false"><span class='fa-arial fa-fw'>S</span>Medienpraxis (Musik, Film, TV, etc.)</a></li> 
+      <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+      
+    </ul> 
+    	</div><!-- /content -->
+    
+         
+    
+    <script type="text/javascript">
+    //leftpanel();
+    </script>
+    
+    </div><!-- /page -->
+     <!-- ####################### Medien  #######################  -->
+    
+            <!-- ####################### M_Recht  #######################  -->
+    <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Recht" data-title="HdM App">
+        
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Recht / Wirtschaft</h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Fachgruppen_Allgemein_and_so_on.jpg"/></div>
+             <div style="clear: both;"></div>
+        </div><!-- /header -->
+    
+           
+        <div role="main" class="ui-content jqm-content jqm-fullwidth">
+     
+        <ul  data-role="listview"  >
+       <li><a   href="imageviewer.html?for=f&title=M_Recht" data-ajax="false"  data-role="button" data-corners="false" >
+       <span class='fa-arial fa-fw'>F</span>Recht</a></li>
+       <li><a   href="imageviewer.html?for=h&title=M_Recht" data-ajax="false"  data-role="button" data-corners="false">
+       <span class='fa-arial fa-fw'>H</span>Wirtschaft</a></li> 
+    
+        <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+    </ul> 
+    	</div><!-- /content -->
+    
+         
+    
+    <script type="text/javascript">
+    //leftpanel();
+    </script>
+    
+    </div><!-- /page -->
+     <!-- ####################### Medien  #######################  -->
+    
+            <!-- ####################### M_Sonderbereiche  #######################  -->
+    <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Sonderbereiche" data-title="HdM App">
+    
+    
+          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Sonderbereiche</h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Fachgruppen_Allgemein_and_so_on.jpg"/></div>
+             <div style="clear: both;"></div>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content jqm-content jqm-fullwidth">
+     
+        <ul  data-role="listview"  >
+       <li><a   href="imageviewer.html?for=filme&title=M_Sonderbereiche" data-ajax="false"  data-role="button" data-corners="false" >
+       <i class='fa icon-Movie fa-normal fa-fw'></i>Filme</a>
+       </li>
+       <li><a   href="imageviewer.html?for=seminarapparate&title=M_Sonderbereiche" data-ajax="false"  data-role="button" data-corners="false">
+       <i class='fa icon-Library-2 fa-normal fa-fw'></i>Seminarapparate</a>
+       </li> 
+       <li><a   href="imageviewer.html?for=zeitschriften&title=M_Sonderbereiche" data-ajax="false"  data-role="button" data-corners="false" >
+       <i class='fa icon-Zeitschriften fa-normal fa-fw'></i>Zeitschriften</a>
+       </li>
+       
+        <li><a   href="imageviewer.html?for=abschluss&title=M_Sonderbereiche" data-ajax="false"  data-role="button" data-corners="false" >
+       <i class='fa icon-Abschlussarbeiten fa-normal fa-fw'></i>Abschlussarbeiten</a>
+       </li>
+       
+       <li><a   href="imageviewer.html?for=slbelletristik&title=M_Sonderbereiche" data-ajax="false"  data-role="button" data-corners="false">
+       <i class='fa icon-Flowerpot fa-normal fa-fw'></i>Belletristik</a>
+       </li> 
+       <li><a   href="imageviewer.html?for=j7&title=M_Sonderbereiche" data-ajax="false"  data-role="button" data-corners="false" >
+       <i class='fa icon-Batman-Mask fa-normal fa-fw'></i>Comics / Kindermedien</a>
+       </li>
+       <li><a   href="imageviewer.html?for=sammlung_schoenster&title=M_Sonderbereiche" data-ajax="false"  data-role="button" data-corners="false">
+       <i class='fa  icon-Sammlung fa-normal fa-fw'></i>Sammlung sch&#246;nster B&#252;cher</a>
+       </li> 
+         <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+    </ul> 
+    	</div><!-- /content -->
+    
+         
+    
+    <script type="text/javascript">
+    //leftpanel();
+    </script>
+    
+    </div><!-- /page -->
+    <!-- ####################### Medien  #######################  -->
+    
+    
+    
+    
+    <!-- ####################### Medien  #######################  -->
+
+        <!-- ####################### M_Fachgebieten  #######################  -->
+        <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Fachgebieten" data-title="HdM App">
+        
+        
+              <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Suche nach Fachgebieten </h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Fachgebieten.jpg"/></div>
+             <div style="clear: both;"></div>
+            </div><!-- /header -->
+        
+                 
+            <div role="main" class="ui-content jqm-content jqm-fullwidth">
+         
+            <ul  data-role="listview"  >
+               <li><a   href="imageviewer.html?for=a&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false" >
+               <span class='fa-arial fa-fw'>A</span>Buch- und Bibliothekswesen</a>
+               </li>
+               <li><a   href="#Biographische" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>B</span>Biographische Literatur</a>
+               </li>
+               <li><a   href="imageviewer.html?for=d&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>D</span>Druck</a>
+               </li>
+               <li><a   href="imageviewer.html?for=e&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>E</span>Geschichte</a>
+               </li>
+               <li><a   href="imageviewer.html?for=f&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>F</span>Recht</a>
+               </li>
+               <li><a   href="imageviewer.html?for=g&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>G</span>Soziologie / Politik</a>
+               </li>
+               <li><a   href="imageviewer.html?for=h&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>W</span>Wirtschaft</a>
+               </li>
+               <li><a   href="imageviewer.html?for=k&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>K</span>Kommunikations- und Medienforschung</a>
+               </li>
+               <li><a   href="imageviewer.html?for=l&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>L</span>Philosophie</a>
+               </li>
+               <li><a   href="imageviewer.html?for=m&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false" >
+               <span class='fa-arial fa-fw'>M</span>Psychologie</a>
+               </li>
+               <li><a   href="imageviewer.html?for=n&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>N</span>P&#228;dagogik</a>
+               </li>
+               <li><a   href="imageviewer.html?for=o&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>O</span>Sprache / wissenschaftliches Arbeiten</a>
+               </li>
+               <li><a   href="imageviewer.html?for=p&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>P</span>Literatur</a>
+               </li>
+               <li><a   href="imageviewer.html?for=r&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>R</span>Kunst</a>
+               </li>
+               <li><a   href="imageviewer.html?for=s&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>S</span>Medienpraxis (Musik, Film, TV, etc.)</a>
+               </li>
+               <li><a   href="imageviewer.html?for=t&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>T</span>Mathematik</a>
+               </li>
+               <li><a   href="imageviewer.html?for=u2&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>U</span>Naturwissenschaft</a>
+               </li>
+               <li><a   href="imageviewer.html?for=v&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>V</span>Verpackungstechnik</a>
+               </li>
+               <li><a   href="imageviewer.html?for=w&title=M_Fachgebieten" data-ajax="false"  data-role="button" data-corners="false">
+               <span class='fa-arial fa-fw'>W</span>Technik / Informatik</a>
+               </li>   
+                <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+           
+            </ul> 
+        	</div><!-- /content -->
+        
+             
+        
+        <script type="text/javascript">
+        //leftpanel();
+        </script>
+        
+        </div><!-- /page -->
+     <!-- ####################### Medien  #######################  -->
+
+        <!-- ####################### M_Signaturen  #######################  -->
+        <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;height: 100px;"  id="M_Signaturen" data-title="HdM App">
+        
+             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Suche nach Signaturen</h1>
+                  <div  id="headerImage"><img style=" " src="images/Suche_nach_Signaturen.jpg"/></div>
+             <div style="clear: both;"></div>
+            </div><!-- /header -->
+            
+                
+            <div role="main" class="ui-content jqm-content jqm-fullwidth" style="margin: 35px;">
+                 <div >
+                    <p>Gib hier Deine Signatur ein und finde 
+                         heraus, wo die Medien stehen.</p>
+                 </div>
+                  
+                           <div class="box-holder" style="display: inline-block;padding-top: 20px;  padding-right: 3px;  ">
+                         <input data-role="none" id="searchbox"  onkeyup='key13(document.getElementById("searchbox").value);'
+                          type="text" style=" border-radius: 0;border: none; width: 210px;height: 30px;  font-size: 30px;
+                         "  />
+                       
+                        
+                          </div>
+                        <div  style="display: inline-block;  margin-top: 25px;
+                        padding: 6px  14px  8px  14px;color:#fff; background: #be1432; "
+                        onclick='search_signature(document.getElementById("searchbox").value);' >
+                        <i class='fa   icon-Search fa-normal fa-2x' style="color: #fff; " ></i></div>  
+                 
+                 <script>
+                 $('#searchbox').bind("enterKey",function(e){
+                                         search_signature(document.getElementById("searchbox").value);
+                                        });
+                 $('#searchbox').keyup(function(e){
+                    if(e.keyCode == 13)
+                    {
+                        $(this).trigger("enterKey");
+                    }
+                    });
+                 </script> 
+              
+        	</div><!-- /content -->
+        
+             
+        
+        <script type="text/javascript">
+        //leftpanel();
+        </script>
+        
+        </div><!-- /page -->
+        
+         <!-- ####################### Medien  #######################  -->
+
+        <!-- ####################### M_Bibliothek  #######################  -->
+        <div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="M_Bibliothek" data-title="HdM App">
+        
+        
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >die digitale Bibliothek</h1>
+                  <div  id="headerImage"><img style=" " src="images/die_digitale_Bibliothek.jpg"/></div>
+             <div style="clear: both;"></div>
+            </div><!-- /header -->
+        
+                   
+            <div role="main" class="ui-content jqm-content jqm-fullwidth">
+         
+            <ul  data-role="listview"  >
+         <li><a   href="#" onclick="external('https://www.hdm-stuttgart.de/bibliothek/bestand/bestand/emedien/');"  data-ajax="false"  data-role="button" data-corners="false" ><i class='fa  icon-Tablet fa-normal fa-fw'></i>eBooks </a></li>
+           <li><a    href="#" onclick="external('http://rzblx1.uni-regensburg.de/ezeit/fl.phtml?bibid=HDM&colors=7&lang=de&notation=ALL');"  data-ajax="false"  data-role="button" data-corners="false" ><i class='fa  icon-Newspaper fa-normal fa-fw'></i>eJournals </a></li>
+           
+           <li><a    href="#" onclick="external('http://opus.bsz-bw.de/hdms/');"  data-ajax="false"  data-role="button" data-corners="false" ><i class='fa  icon-HdM_epub  fa-normal fa-fw'></i>HdM epub &#45; Publikationsserver der HdM</a></li>
+           
+             <li><a    href="#" onclick="external('http://rzblx10.uni-regensburg.de/dbinfo/fachliste.php?bib_id=hdm&lett=l&colors=&ocolors=');"  data-ajax="false"  data-role="button" data-corners="false" ><i class='fa   icon-DBIS  fa-normal fa-fw'></i>DBIS &#45; Datenbankinformationssystem</a></li>
+             <li><a    href="#" onclick="external('https://www.video2brain.com/de/multilicense/hochschule-der-medien-stuttgart');"  data-ajax="false"  data-role="button" data-corners="false" ><i class='fa  icon-Video-5 fa-normal fa-fw'></i>Video2Brain &#45; Online Tutorials</a></li>
+                      
+           <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+          
+        </ul> 
+        	</div><!-- /content -->
+        
+             
+        
+        <script type="text/javascript">
+        //leftpanel();
+        </script>
+        
+        </div><!-- /page -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+               
+                
+               
+<!-- ####################### Arbeitszonen  #######################  -->
+<div data-role="page" style="padding-top:15px;background-color: #f9f9f9;" id="Arbeitszonen">
+        
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Lern- und Arbeitszonen</h1>
+                  <div  id="headerImage"><img style=" " src="images/Lern-_und_Arbeitszonen.jpg"/></div>
+             <div style="clear: both;"></div>
+     </div><!-- /header -->
+            
+       <div role="main" class="ui-content jqm-content">
+
+       <ul data-role="listview">
+
+  <li><a   href="imageviewer.html?for=einzelar&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false" >
+  <i class='fa  icon-Business-Man fa-normal fa-fw'>
+  </i>Einzelarbeitspl&#228;tze</a>
+  </li>
+  
+  <li><a   href="imageviewer.html?for=gruppenar&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-Mens fa-normal fa-fw'>
+  </i>LernZentrum f&#252;r Gruppen</a>
+  </li>
+  
+  <li><a   href="imageviewer.html?for=lernat&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-Board fa-normal fa-fw'></i>LernAtelier</a>
+  </li>
+  
+  <li><a   href="imageviewer.html?for=pc-arbeit&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-Monitor fa-normal fa-fw'></i>PC-Arbeitspl&#228;tze EG</a>
+  </li>
+  
+   <li><a   href="imageviewer.html?for=pc-arbeitog&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-Monitor fa-normal fa-fw'></i>PC-Arbeitspl&#228;tze OG</a>
+  </li>
+    
+    <li><a   href="imageviewer.html?for=lesegeraetseh&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+   <i class='fa   icon-Lesegeraet_fuer_seebehinderte  fa-normal fa-fw'></i>Leseger&#228;t f&#252;r Sehbehinderte</a>
+   </li>
+   
+   <li><a   href="imageviewer.html?for=kopie&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+   <i class='fa  icon-Duplicate-Layer fa-normal fa-fw'></i>Kopierer</a>
+   </li>
+
+   <li><a   href="imageviewer.html?for=buchsca&title=Arbeitszonen" data-ajax="false"  data-role="button" data-corners="false">
+   <i class='fa   icon-Scanner  fa-normal fa-fw'></i>Scanner</a>
+   </li>
+   
+    <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+  
+</ul>
+
+    </div><!-- /content -->
+
+<script type="text/javascript">
+//leftpanel();
+</script>
+</div><!-- /page -->
+
+<!-- ####################### Services  #######################  -->
+<div data-role="page" style="padding-top:15px;background-color: #f9f9f9;" id="Services">
+
+
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Services</h1>
+                  <div  id="headerImage"><img style=" " src="images/Services.jpg"/></div>
+             <div style="clear: both;"></div>
+     </div><!-- /header -->
+     
+    
+    <div role="main" class="ui-content jqm-content">
+
+       <ul data-role="listview">
+
+  <li><a   href="imageviewer.html?for=servpoint&title=Services" data-ajax="false"  data-role="button" data-corners="false" >
+  <i class='fa  icon-ServicePoint  fa-normal fa-fw'></i>ServicePoint (Ausleihe und Information)</a></li>
+  <li><a   href="imageviewer.html?for=selfcheck&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-Download-2 fa-normal fa-fw'></i>Selfcheck und Abholregal</a></li>
+ 
+  <li><a   href="imageviewer.html?for=infop&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa   icon-Info_point  fa-normal fa-fw'></i>InfoPoint (Auskunft und Beratung)</a></li>
+ 
+   <li><a   href="imageviewer.html?for=katalogreog&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-VPN fa-normal fa-fw'></i>WebPac-Katalog Recherche OG</a></li>
+  
+  
+  <li><a   href="imageviewer.html?for=katalogre&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+  <i class='fa  icon-VPN fa-normal fa-fw'></i>WebPac-Katalog Recherche EG</a></li>
+  
+  
+  
+   <li><a   href="imageviewer.html?for=schliessfae&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+   <i class='fa  icon-Lock fa-normal fa-fw'></i>Schlie&#223;f&#228;cher</a></li>
+   
+   <li><a   href="imageviewer.html?for=rueck-box&title=Services" data-ajax="false"  data-role="button" data-corners="false">
+   <i class='fa  icon-Rueckgabebox  fa-normal fa-fw'></i>Medienr&#252;ckgabe</a></li>
+   
+   <li><a   href="#Bibliotheksteam" data-ajax="false"  data-role="button" data-corners="false">
+   <i class='fa  icon-Address-Book fa-normal fa-fw'></i>Dein Bibliotheksteam</a></li>
+  
+  <li><a   href="#Fernleihe" data-ajax="false"  data-role="button" data-corners="false">
+   <i class='fa   icon-Fernleihe  fa-normal fa-fw'></i>Fernleihe</a></li>
+    <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+</ul>
+<script type="text/javascript">
+//leftpanel();
+</script>
+
+    </div><!-- /content -->
+</div>
+
+
+<!-- ####################### Services  #######################  -->
+<div data-role="page" style="padding-top:15px;background-color: #f9f9f9;" id="Standort">
+
+
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Standort Deiner Bibliothek</h1>
+                  <div  id="headerImage"><img style=" " src="images/Standort_Deiner_Bibliothek.jpg"/></div>
+             <div style="clear: both;"></div>
+     </div><!-- /header -->
+     
+    
+    <div role="main" class="ui-content jqm-content">
+ <div style="margin: 35px;" >
+        
+<b>Hochschule der Medien</b> <br />
+<b>Bibliothek</b><br /><br />
+
+<b>Besucheradresse:</b><br />
+Nobelstra&#223;e 8 <br />
+70569 Stutftgart<br />
+<br />
+<b>Anschrift:</b><br />
+Nobelstra&#223;e 10 <br />
+70569 Stutftgart<br />
+          
+            <br />
+<a href="tel:071189232510" style="text-decoration: none; color:inherit;">Tel.: 0711 / 8923-2510</a><br />
+ 
+<a  href="mailto:bibliothek@hdm-stuttgart.de?subject=HDMv1.0" style="color:#be1432 ;">bibliothek@hdm-stuttgart.de</a>
+
+          </div>
+       <ul data-role="listview">
+
+  <li><a   href="imageviewer.html?for=Campusplan&title=Standort" data-ajax="false"  data-role="button" data-corners="false" >
+  <i class='fa icon-Campusplan  fa-normal fa-fw'></i>Campusplan</a>
+  </li>
+   <li><a   href="#" style="background-color: #f9f9f9;" data-role="button" data-corners="false">  </a></li>
+  
+</ul>
+<script type="text/javascript">
+//leftpanel();
+</script>
+
+    </div><!-- /content -->
+</div>
+
+
+
+<!-- ####################### Impressum  #######################  -->
+<div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="Impressum" data-title="HdM App">
+
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Impressum</h1>
+                  <div  id="headerImage"><img style=" " src="images/Impressum.jpg"/></div>
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+    
+           
+            <div role="main" class="ui-content jqm-content jqm-fullwidth" style="margin: 35px;">
+         <div  >
+        
+Hochschule der Medien <br />
+Bibliothek<br />
+Nobelstra&#223;e 10 <br />
+70569 Stuttgart<br />
+          <br />
+<a href="tel:071189232510" style="text-decoration: none; color:inherit;">Tel.: 0711 / 8923-2510</a><br />
+<br />
+Feedback bitte an: <br />
+<a  href="mailto:bibliothek@hdm-stuttgart.de?subject=HDMv1.0" style="color:#be1432 ;">bibliothek@hdm-stuttgart.de</a>
+
+<br /><br />
+Version 1.0 der HdM Bibliotheks-App
+<br /><br />
+Bildnachweis: Hochschule der Medien; Bauer, EKZ
+<br /><br />
+Realisierung: <br />
+<a  href="#" onclick="external('http://www.flippingrocks.de/');" data-ajax="false"   style="text-decoration:underline; color:inherit;">www.flippingrocks.de</a>
+    <br />
+         
+         
+         
+         </div>
+         
+          </div>
+          
+ 
+        	</div>
+ 
+<!-- #######################  Biographische Literatur  #######################  -->
+<div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="Fernleihe" data-title="HdM App">
+
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Fernleihe</h1>
+                  <div  id="headerImage"><img style=" " src="images/Services.jpg"/></div>
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+    
+           
+            <div role="main" class="ui-content jqm-content jqm-fullwidth" style="margin: 35px;">
+         <div  >
+        Die Online-Fernleihe ist gedacht f&#252;r Literatur (Monographien und Aufsatzkopien), die in der HdM Bibliothek oder in einer anderen Stuttgarter Bibliothek nicht vorhanden ist. Die Fernleihe kann komfortabel direkt aus dem WebPac der HdM gestartet werden. Pro Fernleihe wird eine Bearbeitungsgeb&#252;hr von 1,50 &#8364; berechnet, die sofort auf dem Benutzerkonto verbucht wird. Die Lieferzeit betr&#228;gt in der Regel 2 - 8 Wochen.<br/><a  href="#" onclick="external('https://www.hdm-stuttgart.de/bibliothek/benutzung/fernleihe');" style="color:#be1432;">Weitere Information</a> 
+         
+         
+         
+         </div>
+         
+          </div>
+          
+ 
+        	</div>
+<!-- #######################  Biographische Literatur  #######################  -->
+<div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="Biographische" data-title="HdM App">
+
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Biographische Literatur</h1>
+                  <div  id="headerImage"><img style=" " src="images/Services.jpg"/></div>
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+    
+           
+            <div role="main" class="ui-content jqm-content jqm-fullwidth" style="margin: 35px;">
+         <div  >
+         Diese B&#252;cher befinden sich im Standort Archiv. Bitte wenden Sie sich an das Bibliothekspersonal.
+     
+         
+         
+         
+         </div>
+         
+          </div>
+          
+ 
+        	</div>
+ 
+<!-- ####################### Bibliotheksteam  #######################  -->
+<div data-role="page" style="padding-top:15px;background-color: #f9f9f9;"  id="Bibliotheksteam" data-title="HdM App">
+
+     <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='a' style="background-color: #fff;padding-top:19px;" >
+                <div style="float: left; overflow: hidden;">
+                    <a href="#leftpanel" data-role="none"><img src="images/menu-icon.png"  style="  " alt="leftpanel" id="header-menu-icon"  /></a>
+                     <img src="images/back2.png" class="backButton" ontouchend="onBackKeyDown2();"   />
+                 </div>
+                 <h1 class="header-title" >Dein Bibliotheksteam</h1>
+                  
+             <div style="clear: both;"></div>
+             </div><!-- /header -->
+    
+           <img  src="images/partner.jpg"  style="width:100%; "/>
+            <div role="main" class="ui-content jqm-content jqm-fullwidth" >
+     
+<div style="padding-left: 30px;">
+  <br/>
+
+                  <div style="color:#be1432 ;"><b>Erik Friedling</b><br />
+                  </div>
+                  <div>Leiter der Bibliothek</div>
+                  <br/>
+                  <div style="color:#be1432 ;"><b>Raffaela Haack</b><br />
+                  </div>
+                  <div>Stv. Leiterin der Bibliothek</div>
+                  <br/>
+                  <div style="color:#be1432 ;"><b>Ulrike Hauptmann</b><br />
+                  </div>
+                  <div>Dipl. Bibliothekarin</div>
+                  <br/>
+                  <div style="color:#be1432 ;"><b>Marco Jakob</b><br />
+                  </div>
+                  <div>Technischer Projektmitarbeiter</div>
+                   <br/>
+            
+                  <div style="color:#be1432 ;"><b>Beate Knapper</b><br />
+                  </div>
+                  <div>Fachangestellte f&#252;r Medien- und<br/>Informationsdienste (FaMI)</div>
+                  <br/>
+            
+               
+                  <div style="color:#be1432 ;"><b>Britta Loose</b><br />
+                  </div>
+                  <div> Fachangestellte f&#252;r Medien- und<br/>Informationsdienste (FaMI)</div>
+
+            <br/>
+              
+              <div style="color:#be1432 ;"><b>Lisa Maly</b><br />
+              </div>
+              <div>Fachangestellte f&#252;r Medien- und<br/>Informationsdienste (FaMI)</div>
+
+    <br/>
+          
+                  <div style="color:#be1432 ;"><b>Rebecca Tschierschke</b><br />
+                  </div>
+                  <div>Fachangestellte f&#252;r Medien- und<br/>Informationsdienste (FaMI)</div>
+
+             
+
+    <br/>
+    
+
+</div>
+
+
+
+          
+            </div>
+         
+          </div>
+          
+
+<script type="text/javascript">
+//leftpanel();
+</script>
+ 
+</div><!-- /page -->
+<!-- ####################### PANEL  #######################  -->
+<div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="leftpanel" 
+ style="border: solid #ececec 1px;margin-left: -3px;  ">
+    <ul data-role="listview" id="panelul"  >
+        
+        <li data-filtertext="Home" data-icon="false" >
+            <a href="#index" data-ajax="false" data-role="button" data-corners="false"    >  <i class='fa icon-Home fa-normal fa-fw'></i> Home</a>
+        </li>
+        <li data-filtertext=" Zugang zum Katalog" data-icon="false" >
+            <a href="#" onclick="external('https://bsz.ibs-bw.de/aDISWeb/app?service=direct/0/Home/$DirectLink&sp=S127.0.0.1:23212');" data-ajax="false" data-role="button" data-corners="false">  <i class='fa icon-Open-Book fa-normal fa-fw'></i> Zugang zum Katalog </a>
+        </li>
+        <li data-filtertext="Zugang zum Benutzerkonto" data-icon="false">
+            <a  href="#" onclick="external('https://bsz.ibs-bw.de/aDISWeb/app?service=direct/0/Home/$DirectLink&sp=S127.0.0.1:23212&sp=SBK00000000');" data-ajax="false" data-role="button" data-corners="false"> <i class='fa icon-User fa-normal fa-fw'></i>  Zugang zum Benutzerkonto </a>
+        </li>
+        <li data-filtertext="Medien" data-icon="false">
+            <a href="#Medien" data-ajax="false" data-role="button" data-corners="false">
+             <i class='fa  icon-Books-2 fa-normal fa-fw '></i>  Medien</a>
+        </li>
+        
+          
+        <li data-filtertext="Lern- und Arbeitszonen" data-icon="false">
+         <a href="#Arbeitszonen" data-ajax="false" data-role="button" data-corners="false">
+          <i class='fa icon-Pen-2 fa-normal fa-fw'></i>  Lern- und Arbeitszonen</a>
+           </li>
+           
+        <li data-filtertext="Services" data-icon="false">
+            <a href="#Services" data-ajax="false" data-role="button" data-corners="false">  <i class='fa icon-Speach-Bubbles fa-normal fa-fw'></i>  Services</a>
+        </li>
+        <li data-filtertext="Unsere Öffnungszeiten" data-icon="false">
+            <a href="#" onclick="internal('calendar.html');" data-ajax="false" data-role="button" data-corners="false"> <i class='fa icon-Watch fa-normal fa-fw'></i>  Unsere &#214;ffnungszeiten</a>
+        </li>
+        <li data-filtertext="Standort Deiner Bibliothek" data-icon="false">
+            <a href="#Standort" data-ajax="false" data-role="button" data-corners="false">  <i class='fa icon-Standort_der_bibliothek fa-normal fa-fw'></i>  Standort Deiner Bibliothek</a>
+        </li>
+        <li data-filtertext="News Deiner Bibliothek" data-icon="false">
+            <a  href="#" onclick="external('https://www.hdm-stuttgart.de/bibliothek/startseite');" data-ajax="false" data-role="button">  <i class='fa icon-Newspaper-2 fa-normal fa-fw'></i> News Deiner Bibliothek</a>
+        </li>
+        <li data-filtertext="Impressum" data-icon="false">
+            <a href="#Impressum" data-ajax="false" data-role="button" data-corners="false">  <i class='fa icon-Information fa-normal fa-fw'></i> Impressum</a>
+        </li>
+              </ul>
+</div>   
+ <script type="text/javascript" src="cordova.js"></script>
+ <script src="imageviewer/js/functions.js"></script>
+ <script>
+ $(document).bind('mobileinit',function(){
+      $.mobile.keepNative = "li,ul"; /* jQuery Mobile 1.4 and higher */
+      //$.mobile.page.prototype.options.keepNative = "select, input"; /* jQuery Mobile 1.4 and lower */
+ });  
+ 
+ </script>
+ <script type="text/javascript">
+        
+            $(document).ready(function($) {
+                            
+                var time = 8; // time in seconds
+                 
+                  var $progressBar,
+                      $bar, 
+                      $elem, 
+                      isPause, 
+                      tick,
+                      percentTime;
+                 
+              
+                    $("#main-slider").owlCarousel({   
+                          
+                          slideSpeed : 700,
+                          paginationSpeed : 700,
+                          rewindSpeed : 1500,
+                          singleItem : true,
+                          pagination : false,
+                          lazyLoad : true,
+                          autoPlay : 10000,
+                          stopOnHover : true,
+                          navigation: false,
+                          navigationText: [
+                            "<i class='owl-nav-left fa fa-angle-left'></i>",
+                            "<i class='owl-nav-right fa fa-angle-right'></i>"
+                            ],
+                          afterInit : progressBar,
+                          afterMove : moved,
+                          startDragging : pauseOnDragging
+                       });
+                 
+                 
+                    function progressBar(elem){
+                      $elem = elem;
+                      buildProgressBar();
+                      start();
+                    }
+                 
+                 
+                    function buildProgressBar(){
+                      $progressBar = $("<div>",{
+                        id:"progressBar"
+                      });
+                      $bar = $("<div>",{
+                        id:"bar"
+                      });
+                      $progressBar.append($bar).prependTo($elem);
+                    }
+                 
+                    function start() {
+                      
+                      percentTime = 0;
+                      isPause = false;
+                      
+                      tick = setInterval(interval, 10);
+                    };
+                 
+                    function interval() {
+                      if(isPause === false){
+                        percentTime += 1 / time;
+                        $bar.css({
+                           width: percentTime+"%"
+                         });
+                         
+                        if(percentTime >= 100){
+                        
+                          $elem.trigger('owl.next')
+                        }
+                      }
+                    }
+                 
+                    function pauseOnDragging(){
+                      isPause = true;
+                    }
+                 
+                    function moved(){
+                    
+                      clearTimeout(tick);
+                      start();
+                    }
+                 
+                    
+                     $elem.on('mouseover',function(){
+                       isPause = true;
+                     })
+                     $elem.on('mouseout',function(){
+                       isPause = false;
+                     })
+            })(jQuery);
+        
+        </script>
+        <script type="text/javascript">
+           
+              $("body").css("display", "none");
+              $("body").fadeIn(50);
+
+        </script>
+</body>
+</html>

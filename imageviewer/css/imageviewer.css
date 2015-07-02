@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    
+    font-family:Georgia;
+    font-size: 34px;
+    font-style: italic;
+    letter-spacing:-1px;
+    width:auto;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: #fff;
+   
+}
+ img{
+     
+ }
